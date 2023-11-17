@@ -80,7 +80,7 @@
     "vsce": "^2.15.0"
   },
   "dependencies": {
-    "find-up": "^6.3.0",
+    "find-up": "^7.0.0",
     "ignore": "^5.2.4",
     "prettier-eslint": "^15.0.1"
   },
