@@ -22,6 +22,14 @@
 		"constructor-super": "warn",
 		"valid-typeof": "warn",
 		"consistent-return": "off",
-		"max-len": "warn"
+		"max-len": [
+			"warn",
+			{
+				"code": 100,
+				"ignoreStrings": true,
+				"ignoreComments": true,
+				"ignorePattern": "`.*`"
+			}
+		]
 	}
 }

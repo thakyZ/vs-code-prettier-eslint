@@ -15,7 +15,7 @@ runAsWorker(
     text, prettierEslintPath, filePath, extensionConfig,
   }) => {
     const format = /** @type {typeof import('prettier-eslint')} */ (
-      (await import(prettierEslintPath)).default
+      (await import(`file:///${prettierEslintPath}`)).default
     );
     return format({
       text,

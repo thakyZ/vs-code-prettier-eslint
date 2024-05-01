@@ -2,6 +2,8 @@ const path = require('path');
 
 const { runTests } = require('@vscode/test-electron');
 
+const { error } = console;
+
 async function main() {
   try {
     // The folder containing the Extension Manifest package.json
@@ -26,7 +28,7 @@ async function main() {
       ],
     });
   } catch (err) {
-    console.error('Failed to run tests');
+    error('Failed to run tests');
     process.exit(1);
   }
 }

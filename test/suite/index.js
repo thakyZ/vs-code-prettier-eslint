@@ -1,5 +1,7 @@
 const { runCLI } = require('jest');
 
+const { error, info } = console;
+
 const path = require('path');
 
 module.exports = {
@@ -16,13 +18,13 @@ module.exports = {
           testResult.testResults
             .filter((assertionResult) => assertionResult.status === 'passed')
             .forEach(({ ancestorTitles, title, status }) => {
-              console.info(`  ● ${ancestorTitles} > ${title} (${status})`);
+              info(`  ● ${ancestorTitles} > ${title} (${status})`);
             });
         });
 
         jestCliCallResult.results.testResults.forEach((testResult) => {
           if (testResult.failureMessage) {
-            console.error(testResult.failureMessage);
+            error(testResult.failureMessage);
           }
         });
 
