@@ -1,6 +1,6 @@
 {
-  "publisher": "thakyZ",
-  "name": "vs-code-prettier-eslint-nekoboinick",
+  "publisher": "nekoboinick",
+  "name": "vs-code-prettier-eslint",
   "displayName": "Prettier ESLint",
   "description": "A Visual Studio Extension to format JavaScript and Typescript code using prettier-eslint package",
   "license": "MIT",
@@ -112,8 +112,9 @@
   },
   "__metadata": {
     "id": "e150ea06-edbf-4773-8acf-a25d62026fe4",
-    "publisherDisplayName": "thakyZ",
+    "publisherDisplayName": "Neko Boi Nick",
     "publisherId": "51c80b53-3465-4db8-be32-4c015e91f570",
     "isPreReleaseVersion": false
+  }
   }
 }
